@@ -10,17 +10,307 @@
 </head>
 
 <body>
-  <img src="/__spritemap#sprite-logo" />
-  <div data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <div class="wrapper" data-wrapper="wrapper" data-scroll="off-scroll">
+    <header>
+      <div class="header-container" data-header="header-container">
+        <div class="header-wrapper" data-header="header-open">
+          <div class="logo-wrapper" data-header="logo-wrapper">
+            <a class="header-logo logo" href="#">
+              <img src="./img/svg/logo-mobile.svg" width="30" height="30" alt="Логотип">
+            </a>
+            <button class="header-wrapper__button js-toggle-button" type="button" data-header="button-menu"><span>
+                меню</span>
+              <svg width="18" height="18">
+                <use xlink:href="__spritemap#sprite-menu-close"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="main-nav" data-header="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__item-link site-list__item-link--active site-list__item-link--current" href="#">
+                    О проекте
+                  </a>
+                </li>
+                <li class="site-list__item" data-nav="programs">
+                  <a class="site-list__item-link" href="#">
+                    Программы
+                    <svg width="12" height="7">
+                      <use xlink:href="__spritemap#sprite-arrow"></use>
+                    </svg>
+                  </a>
+                  <ul class="sub-menu" data-sub="sub-programs">
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Стажировки
+                      </a>
+                    </li>
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Волонтёрство
+                      </a>
+                    </li>
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Учёба
+                      </a>
+                    </li>
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Религия
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="#">
+                    Как поехать
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="#">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="site-list__item" data-nav="news">
+                  <a class="site-list__item-link" href="#">
+                    Новости
+                    <svg width="12" height="7">
+                      <use xlink:href="__spritemap#sprite-arrow"></use>
+                    </svg>
+                  </a>
+                  <ul class="sub-menu" data-sub="sub-news">
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Стажировки
+                      </a>
+                    </li>
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Волонтёрство
+                      </a>
+                    </li>
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Учёба
+                      </a>
+                    </li>
+                    <li class="sub-item">
+                      <a class="sub-item__item-link" href="#">
+                        Религия
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div data-test="slider">
+        <section class="hero">
+          <div class="container container--hero">
+            <h1 class="visually-hidden">Проект «Стажировка»</h1>
+            <div class="hero-wrapper">
+              <div class="swiper hero__slider" data-hero="hero-slider">
+                <ul class="swiper-wrapper hero__list">
+                  <li class="swiper-slide hero__item" data-hero="hero-item">
+                    <div class="hero__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="img/hero/slide1-desk.webp 1x, img/hero/slide1-desk@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/hero/slide1-tab.webp 1x, img/hero/slide1-tab@2x.webp 2x">
+                        <img src="img/hero/slide1-mob.webp" srcset="img/hero/slide1-mob@2x.webp 2x" width="320"
+                          height="568" alt="">
+                      </picture>
+                    </div>
+                    <div class="hero__content" data-hero="content">
+                      <h2 class="hero__title">Глобальный профессиональный
+                        опыт обучения за рубежом</h2>
+                      <p class="hero__text">Погрузитесь в академическую программу, проходя практику в разных городах,
+                        ощущая
+                        настоящий студенческий стиль
+                        жизни!</p>
+                      <div class="hero__link-wrapper">
+                        <button class="button hero__link" data-hero="open-modal">подробнее
+                          <svg width="10" height="10">
+                            <use xlink:href="__spritemap#sprite-arrow-hero"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide hero__item hero__item--video" data-hero="hero-item">
+                    <div class="hero__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="img/hero/slide2-desk.webp 1x, img/hero/slide2-desk@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/hero/slide2-tab.webp 1x, img/hero/slide2-tab@2x.webp 2x">
+                        <img src="img/hero/slide2-mob.webp" srcset="img/hero/slide2-mob@2x.webp 2x" width="320"
+                          height="568" alt="">
+                      </picture>
+                    </div>
+                    <div class="hero__content" data-hero="content">
+                      <h2 class="hero__title">Волонтёрские программы — внесите свой вклад в общество</h2>
+                      <p class="hero__text">Возможности для преподавания, органического сельского хозяйства, устойчивого
+                        образа жизни и другое.</p>
+                      <div class="hero__link-wrapper">
+                        <button class="button hero__link" data-hero="open-modal">подробнее
+                          <svg width="10" height="10">
+                            <use xlink:href="__spritemap#sprite-arrow-hero"></use>
+                          </svg>
+                        </button>
+                      </div>
+                  </li>
+                  <li class="swiper-slide hero__item hero__item--video" data-hero="hero-item">
+                    <div class="hero__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="img/hero/slide3-desk.webp 1x, img/hero/slide3-desk@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/hero/slide3-tab.webp 1x, img/hero/slide3-tab@2x.webp 2x">
+                        <img src="img/hero/slide3-mob.webp" srcset="img/hero/slide3-mob@2x.webp 2x" width="320"
+                          height="568" alt="">
+                      </picture>
+                    </div>
+                    <div class="hero__content" data-hero="content">
+                      <h2 class="hero__title">Программы стажировок
+                        в крупнейших компаниях мира</h2>
+                      <p class="hero__text">Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+                      <div class="hero__link-wrapper">
+                        <button class="button hero__link" data-hero="open-modal">подробнее
+                          <svg width="10" height="10">
+                            <use xlink:href="__spritemap#sprite-arrow-hero"></use>
+                          </svg>
+                        </button>
+                      </div>
+                  </li>
+                </ul>
+                <div class="hero__pagination-wrapper">
+                  <div class="swiper-pagination hero__pagination" data-hero="hero-pagination">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div data-test="about">
+        <section class="about">
+          <div class="container">
+            about
+          </div>
+        </section>
+      </div>
+      <div data-test="programs">programs</div>
+      <div data-test="grant">grant</div>
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="contacts">contacts</div>
+      <div data-test="form">form</div>
+      <div data-test="footer">footer</div>
+    </main>
+  </div>
+  <div class="modal" data-modal="form">
+    <div class="modal__wrapper" data-modal="modal-wrapper">
+      <div class="modal__content" data-modal="modal-content">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-modal="modal-close">
+
+          <svg width="14" height="14">
+            <use xlink:href="__spritemap#sprite-close-modal"></use>
+          </svg>
+        </button>
+        <div class="modal__text">
+          <h3>Напишите нам</h3>
+          <p>Оставьте ваши контакты, если у вас остались вопросы – мы на них ответим!</p>
+        </div>
+        <div class="form__container form" data-form-validate="data-form-validate" data-callback="base">
+          <form action="https://echo.htmlacademy.ru/." class="form__form">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend visually-hidden">Форма связи</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <div class="custom-input" data-validate-type="text" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                    <label class="form__name-lable" for="name"><span class="custom-input__label"></span>Имя</label>
+                    <input class="form__city-input" data-input="name" placeholder="" type="text" name="name"
+                      id="name-input" required>
+                  </div>
+                </li>
+                <li class="form__item">
+
+
+                  <div class="custom-input" data-validate-type="city" data-message-base="Поле обязательно к заполнению"
+                    data-required="data-required">
+                    <span>Город</span>
+                      <div class="custom-select" data-select="data-select" data-validate-type="select" data-name="some-name" data-id="id-example-1"><span class="custom-select__error">Выберите тему обращения</span><span class="custom-select__placeholder"></span>
+                        <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"><svg width="16" height="16">
+                          <use xlink:href="__spritemap#sprite-arrow-down"></use>
+                        </svg></span></button>
+                        <ul class="custom-select__list" role="listbox">
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Киев</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Одесса</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Буча</li>
+                        </ul>
+                      </div>
+                  </div>
+
+                </li>
+
+
+                <li class="form__item">
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля"
+                    data-message-success="Поле заполнено верно" data-required="data-required">
+                    <label class="form__phone-lable" for="phone"><span
+                        class="custom-input__label"></span>Телефон:</label>
+                    <input class="form__phone-input" data-input="phone" type="tel" name="Number-phone" placeholder=""
+                      id="phone">
+                  </div>
+                </li>
+                <li class="form__item">
+                  <div class="custom-input custom-input--checkbox custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
+                    data-message-base="Поле обязательно к заполнению">
+                    <label class="form__name-lable">
+                      <input class="form__checkbox-input visually-hidden" type="checkbox" name="agree">
+                      <span class="form__marck">
+                        <svg width="10" height="10">
+                          <use xlink:href="__spritemap#sprite-check"></use>
+                        </svg>
+                      </span>
+                      <span class="form__text-checkbox">Я согласен на обработку моих персональных данных</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button button__form btn btn--form" type="submit" aria-label="Закрыть попап">
+              Отправить
+              <svg width="10" height="10">
+                <use xlink:href="__spritemap#sprite-arrow-hero"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <script type="module" src="js/main.js"></script>
 </body>
 
