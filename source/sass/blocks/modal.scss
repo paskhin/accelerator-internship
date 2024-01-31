@@ -272,19 +272,22 @@
   line-height: 9px;
   letter-spacing: 0.24px;
   text-transform: uppercase;
-  padding: 15.5px 58px 15.5px 20px;
+  padding: 15.5px 56.5px 15.5px 20px;
   background-color: $color-default-white;
   border: 1px solid $color-blue;
   border-radius: 30px;
   color: $color-text-blue;
 
   @include vp-768 {
-    padding: 22px 80px 21px 30px;
+    padding: 18px 80px 18px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
   }
 
   svg {
     position: absolute;
-    right: 16.5px;
+    right: 15.5px;
 
     @include vp-768 {
       right: 20.5px;
@@ -298,12 +301,13 @@
     height: 34px;
     background-color: $color-blue;
     border-radius: 50px;
-    right: 4px;
+    right: 3px;
     top: 3px;
 
     @include vp-768 {
       width: 46px;
       height: 46px;
+      top: 2px;
     }
   }
 }

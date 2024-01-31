@@ -53,14 +53,16 @@
   position: absolute;
   bottom: 0;
   z-index: 5;
-  background-color: $color-default-white;
-  width: 291px;
+  width: 290px;
+  left: 50%;
+  transform: translate(-50%, -20px);
 
   @include vp-768 {
     display: grid;
     grid-template-columns: 365px auto;
-    width: 658px;
+    width: 678px;
     bottom: 60px;
+    transform: translate(-50%, 0);
   }
 
   @include vp-1440 {
@@ -77,12 +79,24 @@
   line-height: 26px;
   font-weight: 400;
   color: $color-blue;
+  background-color: $color-default-white;
   margin: 0;
   padding: 20px 14px 16px 14px;
   width: 262px;
   border-radius: 0px 16px 16px 0px;
+  margin-bottom: -5px;
+  position: relative;
 
-
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 20px;
+  //   height: 20px;
+  //   top: -20px;
+  //   left: 94px;
+  //   background-image: url("../../img/svg/angle-tab.svg");
+  //   rotate: 360deg;
+  // }
 
 
   @include vp-768 {
@@ -93,8 +107,10 @@
     font-weight: 400;
     line-height: 44px;
     border-radius: 0px 30px 30px 0px;
+    width: 579px;
 
     &::before {
+      content: "";
       width: 20px;
       height: 20px;
       top: -20px;
@@ -113,17 +129,58 @@
   }
 }
 
-.hero__text {
-  display: flex;
+.swiper-pagination {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 18px;
+    right: -10px;
+    background-image: url("../../img/svg/angle.svg");
+    background-repeat: no-repeat;
+    rotate: 270deg;
+
+    @include vp-768 {
+      width: 20px;
+      height: 20px;
+      top: 18px;
+      right: -20px;
+      background-image: url("../../img/svg/angle-tab.svg");
+      rotate: 360deg;
+    }
+  }
+
+}
+
+.hero__text-wrapper {
+  position: relative;
   margin: 0;
-  padding: 0 42px 15px 14px;
+  padding: 0 32px 10px 14px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  background-color: $color-default-white;
+  border-radius: 0px 0px 14px 0px;
+  width: min-content;
 
+  p {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 221px;
+    background-color: $color-default-white;
+
+    @include vp-768 {
+      width: auto;
+    }
+
+  }
 
   @include vp-768 {
-    padding: 0 28px 35px 40px;
+    padding: 0 38px 35px 40px;
     width: auto;
     font-size: 16px;
     font-style: normal;
@@ -143,7 +200,7 @@
     content: "";
     width: 10px;
     height: 10px;
-    top: 0;
+    top: 5px;
     right: -10px;
     background-image: url("../../img/svg/angle.svg");
     background-repeat: no-repeat;
@@ -167,6 +224,7 @@
     align-items: flex-start;
     padding-right: 40px;
     border-radius: 0 0 30px 0;
+    padding-left: 0;
   }
 
   @include vp-1440 {
@@ -235,6 +293,12 @@
   background-color: $color-transparent;
   opacity: 1;
   margin: 0;
+
+  @include vp-768 {
+    width: 8px;
+    height: 8px;
+  }
+
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -246,18 +310,21 @@
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
-  bottom: 311px;
+  bottom: 327px;
   left: calc(50% - 145px);
   padding: 10px 16px;
   background-color: $color-default-white;
   z-index: 10;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
   border-radius: 12px 12px 0px 0px;
 
   @include vp-768 {
-    left: calc(50% - 329px);
+    left: calc(50% - 339px);
     padding: 14px 20px;
+    bottom: 333px;
+    border-radius: 20px 20px 0px 0px;
   }
 
   @include vp-1440 {
