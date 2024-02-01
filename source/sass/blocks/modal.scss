@@ -279,7 +279,7 @@
   color: $color-text-blue;
 
   @include vp-768 {
-    padding: 18px 80px 18px 30px;
+    padding: 19px 79px 19px 29px;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
@@ -290,7 +290,7 @@
     right: 15.5px;
 
     @include vp-768 {
-      right: 20.5px;
+      right: 21.5px;
     }
   }
 
@@ -307,7 +307,7 @@
     @include vp-768 {
       width: 46px;
       height: 46px;
-      top: 2px;
+      top: 3px;
     }
   }
 }

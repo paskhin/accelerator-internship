@@ -136,12 +136,12 @@
                     <div class="hero__content" data-hero="content">
                       <h2 class="hero__title">Глобальный профессиональный
                         опыт обучения за рубежом</h2>
-                        <div class="hero__text-wrapper">
-                          <p class="hero__text">Погрузитесь в академическую программу, проходя практику в разных городах,
-                            ощущая
-                            настоящий студенческий стиль
-                            жизни!</p>
-                        </div>
+                      <div class="hero__text-wrapper">
+                        <p class="hero__text">Погрузитесь в академическую программу, проходя практику в разных городах,
+                          ощущая
+                          настоящий студенческий стиль
+                          жизни!</p>
+                      </div>
                       <div class="hero__link-wrapper">
                         <button class="button hero__link" data-hero="open-modal">подробнее
                           <svg width="10" height="10">
@@ -165,7 +165,8 @@
                     <div class="hero__content" data-hero="content">
                       <h2 class="hero__title">Волонтёрские программы — внесите свой вклад в общество</h2>
                       <div class="hero__text-wrapper">
-                        <p class="hero__text">Возможности для преподавания, органического сельского хозяйства, устойчивого
+                        <p class="hero__text">Возможности для преподавания, органического сельского хозяйства,
+                          устойчивого
                           образа жизни и другое.</p>
                       </div>
                       <div class="hero__link-wrapper">
@@ -190,11 +191,11 @@
                     <div class="hero__content" data-hero="content">
                       <h2 class="hero__title">Программы стажировок
                         в крупнейших компаниях мира</h2>
-                        <div class="hero__text-wrapper">
-                          <p class="hero__text">Получите незаменимый 
-                            опыт работы в ведущих мировых компаниях и 
-                            государственных организациях.</p>
-                        </div>
+                      <div class="hero__text-wrapper">
+                        <p class="hero__text">Получите незаменимый
+                          опыт работы в ведущих мировых компаниях и 
+                          государственных организациях.</p>
+                      </div>
                       <div class="hero__link-wrapper">
                         <button class="button hero__link" data-hero="open-modal">подробнее
                           <svg width="10" height="10">
@@ -205,7 +206,7 @@
                   </li>
                 </ul>
                 <div class="swiper-pagination hero__pagination" data-hero="hero-pagination">
-                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -214,19 +215,57 @@
 
       <div data-test="about">
         <section class="about">
-          <div class="container">
-            about
+          <div class="container container__about">
+            <div class="about__text-wrapper">
+              <div class="about__wrapper-title">
+                <h2 class="about__title">О проекте «Стажировка»</h2>
+                <p class="about__description">«Стажировка» — совместный проект правительств и волонтёрских бригад.</p>
+              </div>
+              <div class="about__wrapper-goal">
+                <h3 class="about__goal-title">Наша цель</h3>
+                <p class="about__text">Наша деятельность направлена на повышение квалификации
+                  молодых специалистов на ранних и средних стадиях карьеры, предоставляя
+                  им инструменты для решения сложных проблем, с которыми сталкиваются
+                  в мире. Цель центра — наделить этих людей способностью инициировать
+                  значимые изменения.</p>
+                  <button class="button about__link" data-hero="open-modal">подробнее о проекте
+                    <svg width="10" height="10">
+                      <use xlink:href="__spritemap#sprite-arrow-hero"></use>
+                    </svg>
+                  </button>
+              </div>
+            </div>
+            <div class="about__information">
+              <ul class="about__list">
+                <li class="about__item">
+                  <b>Более 250 программ</b>
+                  <p>учебных и рабочих, разной длительностью от 3 месяцев до 1 года</p>
+                </li>
+                <li class="about__item">
+                  <b>Более 3000 участников</b>
+                  <p>уже успешно прошли программу от «Стажировка» и остались в разных странах</p>
+                </li>
+                <li class="about__item">
+                  <b>от 4 200 $ до 8 400 $</b>
+                  <p>грант всем участникам для комфортного прохождения программы</p>
+                </li>
+                <li class="about__item">
+                  <b>участники из 60 стран</b>
+                  <p>студенты со всего мира приезжают на программу «Стажировка»</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>
-      <div data-test="programs">programs</div>
+      <!-- <div data-test="programs">programs</div>
       <div data-test="grant">grant</div>
       <div data-test="news">news</div>
       <div data-test="FAQ">FAQ</div>
       <div data-test="reviews">reviews</div>
       <div data-test="contacts">contacts</div>
       <div data-test="form">form</div>
-      <div data-test="footer">footer</div>
+      <div data-test="footer">footer</div> -->
     </main>
   </div>
   <div class="modal" data-modal="form">
@@ -262,17 +301,25 @@
                   <div class="custom-input" data-validate-type="city" data-message-base="Поле обязательно к заполнению"
                     data-required="data-required">
                     <span>Город</span>
-                      <div class="custom-select" data-select="data-select" data-validate-type="select" data-name="some-name" data-id="id-example-1"><span class="custom-select__error">Выберите тему обращения</span><span class="custom-select__placeholder"></span>
-                        <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"><svg width="16" height="16">
-                          <use xlink:href="__spritemap#sprite-arrow-down"></use>
-                        </svg></span></button>
-                        <ul class="custom-select__list" role="listbox">
-                          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
-                          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Киев</li>
-                          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Одесса</li>
-                          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Буча</li>
-                        </ul>
-                      </div>
+                    <div class="custom-select" data-select="data-select" data-validate-type="select"
+                      data-name="some-name" data-id="id-example-1"><span class="custom-select__error">Выберите тему
+                        обращения</span><span class="custom-select__placeholder"></span>
+                      <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                          class="custom-select__text"></span><span class="custom-select__icon"><svg width="16"
+                            height="16">
+                            <use xlink:href="__spritemap#sprite-arrow-down"></use>
+                          </svg></span></button>
+                      <ul class="custom-select__list" role="listbox">
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false"
+                          role="option">Санкт-Петербург</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                          role="option">Киев</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                          role="option">Одесса</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false"
+                          role="option">Буча</li>
+                      </ul>
+                    </div>
                   </div>
 
                 </li>
@@ -290,8 +337,8 @@
                   </div>
                 </li>
                 <li class="form__item">
-                  <div class="custom-input custom-input--checkbox custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
-                    data-message-base="Поле обязательно к заполнению">
+                  <div class="custom-input custom-input--checkbox custom-toggle custom-toggle--checkbox"
+                    data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
                     <label class="form__name-lable">
                       <input class="form__checkbox-input visually-hidden" type="checkbox" name="agree">
                       <span class="form__marck">

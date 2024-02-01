@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 const paginationBlock = document.querySelector('[data-hero="hero-pagination"]');
+const mediaDesk = window.matchMedia('(min-width: 1440px)');
 const mediaTab = window.matchMedia('(min-width: 768px)');
 const mediaMob = window.matchMedia('(min-width: 320px)');
 export const initHeroSwiper = () => {
@@ -29,7 +30,7 @@ export const initHeroSwiper = () => {
     const slideActive = swiper.realIndex;
     const textesActive = document.querySelectorAll('[data-hero="content"]');
     textesActive.forEach((item, index) => {
-      if (mediaTab.matches && index === slideActive) {
+      if (mediaTab.matches && index === slideActive || mediaDesk.matches && index === slideActive) {
         const heightTab = item.clientHeight + 60;
         paginationBlock.style.bottom = `${heightTab}px`;
       } else if (mediaMob.matches && index === slideActive){

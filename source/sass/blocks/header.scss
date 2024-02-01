@@ -54,7 +54,6 @@
   align-items: center;
 
   @include vp-768 {
-    align-items: start;
     width: 100%;
   }
 
@@ -130,6 +129,7 @@
 
   @include vp-768 {
     justify-content: space-between;
+    align-items: start;
   }
 
   @include vp-1440 {
@@ -264,8 +264,4 @@
       display: flex;
     }
   }
-}
-
-.about {
-  height: 700px;
 }
